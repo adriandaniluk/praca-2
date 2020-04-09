@@ -4,14 +4,11 @@ def setup():
     global kolory
     rectMode(CENTER)
     kolory = {"1":(255,0,0,80),"2":(0,0,255,80), "3":(0,255,0,80), "4":(205,124,127,80)}
-    global a
+    global a, d # można też połączyć w jednej linii
     a=0
-    global d
     d=height/2
 def draw():
-    global a
-    global d
-    global t
+    global a, d, t
     background(0)
     global lista
     lista = []
@@ -48,3 +45,5 @@ def draw():
     
     if mousePressed:
         exit()
+        
+# 2pkt
